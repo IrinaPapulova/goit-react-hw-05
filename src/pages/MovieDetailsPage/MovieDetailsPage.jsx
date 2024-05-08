@@ -1,1 +1,1 @@
-import css from ""
+import css from "./MovieDetailsPage.module.css"
