@@ -1,5 +1,15 @@
-.container {
-    display: flex;
-    border: 1px;
-    background-color: bisque;
-}
+.link.active {
+    padding: 5px;
+    background-color: rgb(131, 165, 172);
+    border-radius: 4px;
+    font-size: 25px;
+  }
+  
+  .link {
+    display: inline-flex;
+    background-color: rgb(226, 203, 203);
+    font-size: 30px;
+  }
+  .link:last-child {
+    margin-left: 10px;
+  }

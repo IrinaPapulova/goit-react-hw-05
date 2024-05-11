@@ -1,13 +1,36 @@
 
-import css from "./HomePage.module.css";
+import { useEffect, useState } from "react";
+import { getMovies } from "../../movies-api";
+import MovieList from "../../componenets/MovieList/MovieList";
+import Loading from "../../componenets/Loading/Loading";
+import Error from "../../componenets/Error/Error";
 
-export default function HomePage () {
+export default function HomePage() {
+  const [movies, setMovies] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-    return (
-        <div className={css.container}>
-        <p className={css.textBtn}>
-        <b>HomePage</b>
-        </p>
-        </div>
-    )
+  useEffect(() => {
+    async function fetchMovies() {
+      try {
+        setIsLoading(true);
+        const data = await getMovies();
+        setMovies(data);
+      } catch (error) {
+        setError(true);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchMovies();
+  }, []);
+
+  return (
+    <>
+      <h1>Trending today</h1>
+      {isLoading && <Loading />}
+      {error && <Error />}
+      {movies.length > 0 && <MovieList movies={movies} />}
+    </>
+  );
 }

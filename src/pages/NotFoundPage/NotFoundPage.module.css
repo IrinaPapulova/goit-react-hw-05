@@ -1,10 +1,4 @@
-.container {
-    display: flex;
-    border: 1px;
-    background-color: bisque;
-}
-
 .text {
-    font-size: 14px;
-    color: blue;
-}
+    font-size: 20px;
+    font-weight: 600;
+  }

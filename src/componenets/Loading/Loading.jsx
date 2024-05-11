@@ -1,12 +1,5 @@
-import css from "./Loading.module.css"
+import css from "./Loading.module.css";
 
-export default function Loading () {
-  
-
-    return (
-     <div className={css.container}>
-        </div>
-      
-    )
-  
-  }
+export default function Error() {
+  return <p className={css.text}>Loading...</p>;
+}

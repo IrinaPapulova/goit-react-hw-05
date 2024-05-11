@@ -1,11 +1,11 @@
 .container {
     display: block;
-    background-color: aqua;
+    background-color: rgb(174, 214, 214);
 
 }
 
 .textBtn {
     font-size: 36x;
     text-align: center;
-    color: rgb(59, 14, 14);
+    color: rgb(59, 42, 42);
 }

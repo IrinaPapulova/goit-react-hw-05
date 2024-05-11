@@ -1,12 +1,5 @@
-import css from "./Error.module.css"
+import css from "./Error.module.css";
 
 export default function Error() {
-  
-
-    return (
-     <div className={css.container}>
-        </div>
-      
-    )
-  
-  }
+  return <p className={css.text}>Error...</p>;
+}
