@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMovieIdReviews } from "../../movies-api";
-import Loading from "../../componenets/Loading/Loading";
-import Error from "../../componenets/Error/Error";
+import Loading from "../../components/Loading/Loading";
+import Error from "../../components/Error/Error";
 import css from "./MovieReviews.module.css";
 
 export default function MovieReviews() {

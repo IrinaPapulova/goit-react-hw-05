@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from "react";
 import { getMovies } from "../../movies-api";
-import MovieList from "../../componenets/MovieList/MovieList";
-import Loading from "../../componenets/Loading/Loading";
-import Error from "../../componenets/Error/Error";
+import MovieList from "../../components/MovieList/MovieList";
+import Loading from "../../components/Loading/Loading";
+import Error from "../../components/Error/Error";
 
 export default function HomePage() {
   const [movies, setMovies] = useState([]);

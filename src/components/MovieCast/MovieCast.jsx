@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { getMovieIdCredits } from "../../movies-api";
 import { useParams } from "react-router-dom";
-import Loading from "../../componenets/Loading/Loading";
-import Error from "../../componenets/Error/Error";
+import Loading from "../../components/Loading/Loading";
+import Error from "../../components/Error/Error";
 import css from "./MovieCast.module.css";
 
 export default function MovieCast() {

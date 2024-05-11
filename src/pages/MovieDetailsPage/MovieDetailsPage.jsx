@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState, useRef } from "react";
 import { Outlet, useParams, Link, useLocation } from "react-router-dom";
 import { getMovieId } from "../../movies-api";
-import MovieInfo from "../../componenets/MovieInfo/MovieInfo";
+import MovieInfo from "../../components/MovieInfo/MovieInfo";
 import css from "./MovieDetailsPage.module.css";
 
 export default function MovieDetailsPage() {
